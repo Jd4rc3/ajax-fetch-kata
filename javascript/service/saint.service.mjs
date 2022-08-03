@@ -12,7 +12,7 @@ export class SaintService {
   #url;
 
   constructor() {
-    this.#url = "http://localhost:3000/santos";
+    this.#url = "http://localhost:3000/saints";
   }
 
   /**
@@ -20,7 +20,7 @@ export class SaintService {
    * @returns {Promise<Saint[]>}
    */
   async getSaints() {
-    const { data } = await fetch(this.#url);
+    const data = await RequestHandler.getData(this.#url);
 
     return data.map(
       ({ id, name, constellation }) => new Saint(id, name, constellation)

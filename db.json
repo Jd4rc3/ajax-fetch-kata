@@ -1,0 +1,24 @@
+{
+  "saints": [
+    {
+      "name": "Seiya",
+      "constellation": "Pegasus",
+      "id": 1
+    },
+    {
+      "name": "Hyoga",
+      "constellation": "Cygnuss",
+      "id": 3
+    },
+    {
+      "name": "Shun",
+      "constellation": "Andromeda",
+      "id": 4
+    },
+    {
+      "name": "kki",
+      "constellation": "Phoenix",
+      "id": 5
+    }
+  ]
+}

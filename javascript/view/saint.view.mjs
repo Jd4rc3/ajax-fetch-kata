@@ -70,7 +70,7 @@ export class SaintView {
         this.#template.querySelector(".edit").dataset.id = saint.id;
         this.#template.querySelector(".edit").dataset.name = saint.name;
         this.#template.querySelector(".edit").dataset.constellation =
-          saint.constelacion;
+          saint.constellation;
         this.#template.querySelector(".delete").dataset.id = saint.id;
 
         let $clone = document.importNode(this.#template, true);
@@ -126,7 +126,7 @@ export class SaintView {
   #submitForm() {
     return async (e) => {
       let data = {
-        name: e.target.nombre.value,
+        name: e.target.saintName.value,
         constellation: e.target.constellation.value,
       };
 
